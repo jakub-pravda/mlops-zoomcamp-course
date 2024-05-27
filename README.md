@@ -8,7 +8,7 @@
 
 TODO: move me to a separate `.md`
 
-## Week #1 notes
+## Week #1 - MLOps intro
 
 > MLOps is a set of practices for automating your machine learning workflow and effectively working in a team during all phases of machine learning development.
 
@@ -45,3 +45,66 @@ Maturity model has 4 levels (0 - no MLOps, 4 - fully automation)
     - Model monitoring exists
 - LEVEL 4. **Full MLOps automation**
     - Everything is automated as much as possible, engineers works only on pipeline improvements, but there aren't part of the pipeline process
+
+
+## Week #2 - Experiment tracking
+
+Experiment tracking is the process of keeping track of all the **relevant information** from an ML experiment, which includes:
+
+* Source code
+* Environment
+* Data
+* Model
+* Hyper-parameters
+* Metrics
+* ...
+
+Why is the experiment tracking importnant?
+
+* Reproducibility
+* Organization
+* Optimization
+
+### MLflow
+
+> An open source platform for the machine learning lifecycle. It focuses on experiment tracking and model management.
+
+Contains four modules:
+
+* Tracking
+* Models
+* Model Registry
+* Projects
+
+The MLflow tracking module allows you to organize your experiments into runs, and to keep track of:
+
+* Parameters
+* Metrics
+* Metadata
+* Artifacts
+* Models
+
+### Model management
+
+Part of the MLOps pipeline, model management contains following sections:
+
+* **Experiment tracking**
+* **Model versioning**
+* **Model deployment**
+
+### Model registry server
+
+The model registry component is the centralized model store, set of APIs and UI, to collaboratively manage the full lifecycle of MLflow model. It provides: 
+
+* Model lineage
+* Model versioning
+* Stage transitions
+* Annotations
+
+### Remote tracking server
+
+Remote tracking server can be easily deployed to the cloud. Some benefits of it: 
+
+* Share experiments with other data scientists
+* Collaborate with others to build and deploy the models
+* Give more visibility of the data science efforts
