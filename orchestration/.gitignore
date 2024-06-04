@@ -1,0 +1,16 @@
+192.168.1.192 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPzlaCdKDGbuPdfTtJuvswLCYKA2iQGa4xzS8wCb1yfM
+.DS_Store
+.file_versions
+.gitkeep
+.log
+.logs/
+.mage_temp_profiles
+.preferences.yaml
+.variables/
+__pycache__/
+docker-compose.override.yml
+logs/
+mage-ai.db
+mage_data/
+secrets/
+
