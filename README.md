@@ -108,3 +108,32 @@ Remote tracking server can be easily deployed to the cloud. Some benefits of it:
 * Share experiments with other data scientists
 * Collaborate with others to build and deploy the models
 * Give more visibility of the data science efforts
+
+## Week #4 - Deployment
+
+> How to deploy trained model?
+
+* Do we want to predictions immediately? **Online deployment**
+  * *Run all the time*
+  * **Web services** or **Streaming**
+* Can we wait for the predictions? **Offline (batch) deployment**
+  * *Run regularly*
+
+### Offline deployment (Batch mode)
+
+> We run model regularly (hourly, daily, monthly, ...)
+
+* A typical example is customer churn predictions. We can run these predictions on a daily basis, as churn typically takes some time for a customer to decide to switch to a competitor
+
+### Online deployment
+
+> We run predictions immediately
+
+#### Web service
+
+* Typically we have some UI frontend, that's communicating with backend
+* Example could be ride duration service for taxi companies. Customer needs to know how long the trip will take before the service ordering
+
+#### Streaming service
+
+* Producer, consumer architecture
